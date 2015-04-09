@@ -1,0 +1,8 @@
+# Use the README file as a reference to customize settings.
+
+CommentFlag:
+  fields:
+    default: comment_id, user_id, inappropriate
+    form: comment_id, user_id, inappropriate
+  relationships: 
+  application: Application
