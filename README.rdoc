@@ -1,28 +1,33 @@
-== README
+== Rails 4.2 sample API
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+Basic API with 5 models:
 
-Things you may want to cover:
+* User
+* Comment
+* Rating Type
+* Rating
+* Comment Flag
 
-* Ruby version
+== How to run the test suite
 
-* System dependencies
+Model tests
 
-* Configuration
+$ bundle exec rspec spec/models
 
-* Database creation
+Controller tests
 
-* Database initialization
+$ bundle exec rspec spec/controllers/api/v1
 
-* How to run the test suite
+== Running application
 
-* Services (job queues, cache servers, search engines, etc.)
+From project root directory, start the server:
 
-* Deployment instructions
+$ rails s -p 3000
 
-* ...
+Thanks to typus gem, you can access to <tt>http://localhost:3000/admin</tt>, and create test data in an easy way.
 
+After that, you can check the API from your favourite browser:
 
-Please feel free to use a different markup language if you do not plan to run
-<tt>rake doc:app</tt>.
+<tt>http://localhost:3000/users</tt>
+<tt>http://localhost:3000/comments</tt>
+<tt>http://localhost:3000/ratings</tt>
