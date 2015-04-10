@@ -24,10 +24,13 @@ From project root directory, start the server:
 
 $ rails s -p 3000
 
-Thanks to typus gem, you can access to <tt>http://localhost:3000/admin</tt>, and create test data in an easy way.
+Thanks to typus gem, you can access to http://localhost:3000/admin, and create test data in an easy way.
 
 After that, you can check the API from your favourite browser:
 
-<tt>http://localhost:3000/users</tt>
-<tt>http://localhost:3000/comments</tt>
-<tt>http://localhost:3000/ratings</tt>
+* List all users
+http://localhost:3000/users
+
+* List all comments
+http://localhost:3000/comments
+
